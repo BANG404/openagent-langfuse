@@ -1,4 +1,6 @@
-# Langfuse for OpenAgent
+# Langfuse Tracing
+
+Send agent execution and tool-call traces to Langfuse after setup; message and model-content capture are separately opt-in.
 
 An installable, dependency-free observability integration inspired by
 [Langfuse's Codex plugin](https://github.com/langfuse/codex-observability-plugin).

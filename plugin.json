@@ -1,9 +1,9 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "langfuse",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "repository": "https://github.com/BANG404/openagent-langfuse",
-  "description": "Execution and tool observability through Langfuse OTLP.",
+  "description": "Send agent execution and tool-call traces to Langfuse after setup; message and model-content capture are separately opt-in.",
   "license": "MIT",
   "keywords": [
     "observability",
@@ -174,8 +174,8 @@
         "default_locale": "en",
         "translations": {
           "en": {
-            "display_name": "Langfuse",
-            "description": "Execution and tool observability through Langfuse OTLP.",
+            "display_name": "Langfuse Tracing",
+            "description": "Send agent execution and tool-call traces to Langfuse after setup; message and model-content capture are separately opt-in.",
             "configuration.enabled.label": "Enable upload",
             "configuration.enabled.description": "Uploads execution telemetry to the configured Langfuse project.",
             "configuration.public-key.label": "Project public key",
@@ -204,8 +204,8 @@
             "configuration.capture-model-content.description": "Records each model call’s non-system text history, tool calls/results, reply, model and token usage. Excludes system prompts, reasoning and attachments."
           },
           "zh": {
-            "display_name": "Langfuse",
-            "description": "通过 Langfuse OTLP 观测执行过程和工具调用。",
+            "display_name": "Langfuse 运行追踪",
+            "description": "配置后将智能体执行和工具调用记录发送到 Langfuse；聊天消息和模型调用内容需分别开启采集。",
             "configuration.enabled.label": "开启上传",
             "configuration.enabled.description": "将执行遥测上传到所配置的 Langfuse 项目。",
             "configuration.public-key.label": "项目公钥",
